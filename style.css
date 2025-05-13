@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden;
+  background-color: #1e1e2f;
+  color: #f4f4f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  width: 200vw;
+}
+
+/* Étages */
+.etage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section générique */
+.section {
+  flex: 1;
+  padding: 2rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bouton */
+.button {
+  background-color: transparent;
+  color: #4fc3f7;
+  width: 9em;
+  height: 2.9em;
+  border: 2px solid #4fc3f7;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4fc3f7;
+  color: #1e1e2f;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+}
+
+#btn-to-skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#btn-to-skills .icon {
+  transform: translate(-9px, -7px);
+}
+
+/* Vidéo */
+#video-preview video {
+  width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Projets */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#projects > h2 {
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 2.5em;
+  color: #4fc3f7;
+}
+
+#projects .project {
+  border: none;
+  border-radius: 15px;
+  padding: 1.5vh 2vw;
+  margin: 1vh 0;
+  width: 60vw;
+  max-width: 800px;
+  background-color: #2d2d44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #f4f4f9;
+}
+
+#projects .project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background-color: #3c3c5c;
+}
+
+/* Compétences */
+#skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#skills-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #4fc3f7;
+}
+
+.skill-group h3 {
+  margin-bottom: 10px;
+  color: #4fc3f7;
+  text-align: center;
+}
+
+.skill-group {
+  margin-bottom: 30px;
+}
+
+#skills-row,
+#languages-row,
+#tools-row {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #2d2d44;
+  border-radius: 12px;
+  width: 140px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f4f4f9;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact */
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#contact-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #4fc3f7;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+#contact-card {
+  background-color: #2d2d44;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #f4f4f9;
+  margin-bottom : 20px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #4fc3f7;
+}
+
+.contact-row a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+/* Transitions pour la navigation */
+.container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.etage {
+  transition: transform 0.5s ease-in-out;
+  width: 200vw; /* 2 sections par étage */
+  height: 100vh;
+}
+
+.etage .section {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200vh; /* Deux étages (haut/bas) */
+  overflow: hidden;
+}
+
+.etage {
+  display: flex;
+  flex-direction: row;
+}

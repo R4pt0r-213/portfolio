@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Naji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+<div class="etage">
+    <div class="section" id="about">
+            <h1>Bienvenue sur au portfolio de Naji Hassain</h1>
+            <p>Étudiant en ingénierie informatique, je recherche actuellement un stage technicien orienté développement web, afin de mettre en pratique mes compétences et contribuer à des projets concrets.</p>
+            <button class="button" onclick="slideToNext()">
+  
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                </svg>
+              
+                
+                <div class="text">
+                  Projets
+                </div>
+              
+            </button>
+        </div>
+
+    <div class="section" id="projects">
+        <button class="button" onclick="slideToLeft()">
+            <!-- Flèche vers la gauche -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 12H4.5m0 0l6.75-6.75M4.5 12l6.75 6.75" />
+            </svg>
+          
+            <div class="text">Projets</div>
+          </button>
+          
+            <h2>Mes Projets</h2>
+            <div class="project" data-video="Videos/drone.mkv">
+                <h3>Site de location de drones (en cours)</h3>
+                <p>Site vitrine permetant de louer un drone.</p>
+            </div>
+            <div class="project">
+                <h3>Site pour un cabinet dentaire</h3>
+                <p>Projet academique realise en groupe de 4 permettant la gestion de rendez-vous et du personnel.</p>
+            </div>
+            <div class="project">
+                <h3>Site de quizz</h3>
+                <p>Projet academique realise en groupe de 2 dans lequel 2 joueurs peuvent s'affronter en culture generale</p>
+            </div>
+            <div class="project">
+                <h3>Programmation d'un bot permettant de jouer au jeux avalam</h3>
+                <p>Projet academique realise en groupe de 4 dans lequel un bot doit jouer au jeux avalam.</p>
+            </div>
+            <div class="project" data-video="Videos/serrure.mp4">
+                <h3>Programmation et conception d'une serrure connectee</h3>
+                <p>Serrure connnecte qui s'ouvre soit avec un mot de passe soit avec un badge. Programmation avec arduino.</p>
+            </div>
+            <div class="project" data-video="Videos/lab.mp4">
+                <h3>Programmation et conception d'un jeu de labyrinthe jouable sur une matrice led 8*8</h3>
+                <p>Labyrinthe avec murs qui se deplacent, l'objectif etant d'arriver a la sortie</p>
+            </div>
+            <button class="button" id="btn-to-skills" onclick="slideRightToBottom()">
+                <!-- Flèche en bas -->
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                       stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                  </svg>
+                </div>
+                <div class="text">Compétences</div>
+              </button>
+              
+        </div>
+    
+</div>
+<div class="etage">
+    <div class="section" id="contact">
+        <h2 id="contact-title">Me Contacter</h2>
+    
+        <div id="contact-card">
+          <div class="contact-row">
+            <i class="fas fa-envelope contact-icon"></i>
+            <span>najihassain@example.com</span>
+          </div>
+    
+          <div class="contact-row">
+            <i class="fas fa-phone contact-icon"></i>
+            <span>+33 7 83 97 80 35</span>
+          </div>
+    
+          <div class="contact-row">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span>Bruay-la-Buissiere, France</span>
+          </div>
+    
+          <div class="contact-row">
+            <i class="fab fa-linkedin contact-icon"></i>
+            <a href="https://www.linkedin.com/in/naji-hassain-011a2a294" target="_blank">Linkedin</a>
+          </div>
+    
+          <div class="contact-row">
+            <i class="fab fa-github contact-icon"></i>
+            <a href="https://github.com/naji-hassain" target="_blank">Github</a>
+          </div>
+        </div>
+        <button class="button" onclick="slideBotLeftToRight()">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg>
+          
+            
+            <div class="text">
+              Skills
+            </div>
+          
+        </button>
+      </div>
+    <div class="section" id="skills">
+        <button class="button" id="btn-to-top" onclick="slideRightToTop()">
+            <!-- Flèche vers le haut -->
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                   stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 19.5V4.5m0 0L5.25 11.25M12 4.5l6.75 6.75" />
+              </svg>
+            </div>
+            <div class="text">Projets</div>
+          </button>
+          
+        <h2 id="skills-title">Mes Compétences</h2>
+    
+        <div class="skill-group">
+          <h3 id="title-langages">Langages informatiques</h3>
+          <div id="skills-row">
+            <div class="box" id="skill-c">C</div>
+            <div class="box" id="skill-html">HTML/CSS</div>
+            <div class="box" id="skill-js">JS</div>
+            <div class="box" id="skill-php">PHP</div>
+            <div class="box" id="skill-java">Java</div>
+            <div class="box" id="skill-sql">SQL</div>
+          </div>
+        </div>
+    
+        <div class="skill-group">
+          <h3 id="title-langues">Langues</h3>
+          <div id="languages-row">
+            <div class="box" id="lang-fr">Fr</div>
+            <div class="box" id="lang-en">En</div>
+            <div class="box" id="lang-ar">Ar</div>
+          </div>
+        </div>
+    
+        <div class="skill-group">
+          <h3 id="title-outils">Outils</h3>
+          <div id="tools-row">
+            <div class="box" id="tool-github">GitHub</div>
+            <div class="box" id="tool-figma">Figma</div>
+            <div class="box" id="tool-phpmyadmin">phpMyAdmin</div>
+            <div class="box" id="tool-arduino">Arduino</div>
+          </div>
+        </div>
+        <button class="button" onclick="slideBotRightToLeft()">
+            <!-- Flèche vers la gauche -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 12H4.5m0 0l6.75-6.75M4.5 12l6.75 6.75" />
+            </svg>
+          
+            <div class="text">Contact</div>
+          </button>
+        </div>
+        
+</div>
+    
+    <footer>
+            <p>&copy; 2023 Votre Nom. Tous droits réservés.</p>
+    </footer>
+</div>
+<div id="video-preview" style="display:none; position:absolute; pointer-events:none;">
+    <video muted autoplay loop></video>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
