@@ -45,6 +45,9 @@ h1 {
   justify-content: center;
 }
 
+#about p {
+  text-align : center;
+}
 /* Bouton */
 .button {
   background-color: transparent;
