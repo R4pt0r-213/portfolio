@@ -49,14 +49,20 @@ h1 {
 .button {
   background-color: transparent;
   color: #4fc3f7;
-  width: 9em;
-  height: 2.9em;
+  padding: 0.6em 1.2em;
   border: 2px solid #4fc3f7;
   border-radius: 11px;
-  text-align: right;
-  transition: all 0.6s ease;
-  position: relative;
+  display: inline-flex;
+  align-items: center; /* alignement vertical */
+  justify-content: center;
+  gap: 0.5em; /* espace entre texte et icône */
+  font-size: 1rem;
   cursor: pointer;
+  transition: all 0.6s ease;
+  max-width: 90%;
+  width: fit-content;
+  min-width: 120px;
+  text-align: center;
 }
 
 .button:hover {
@@ -65,16 +71,15 @@ h1 {
 }
 
 .button svg {
-  width: 1.6em;
-  margin: -0.2em 0.8em 1em;
-  position: absolute;
-  display: flex;
-  transition: all 0.6s ease;
+  width: 1.2em;
+  height: 1.2em;
+  transition: transform 0.6s ease;
 }
 
 .button:hover svg {
   transform: translateX(5px);
 }
+
 
 .text {
   margin: 0 1.5em;
@@ -87,9 +92,7 @@ h1 {
   gap: 0.5rem;
 }
 
-#btn-to-skills .icon {
-  transform: translate(-9px, -7px);
-}
+
 
 /* Vidéo */
 #video-preview video {
@@ -273,4 +276,35 @@ h1 {
 .etage {
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+  }
+
+  #video-preview video {
+    width: 90vw;
+    height: auto;
+  }
+
+  #projects .project {
+    width: 90vw;
+    padding: 1em;
+  }
+
+  .box {
+    width: 40vw;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  #contact-card {
+    padding: 20px;
+  }
 }
