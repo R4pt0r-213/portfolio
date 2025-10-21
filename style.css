@@ -20,11 +20,14 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 100vh;
   width: 200vw;
+  overflow: hidden;
+  transition: transform 0.5s ease; /* <- pour translateY */
+  transition: overflow 1s ease;
+
 }
 
-/* Étages */
 .etage {
   display: flex;
   flex-direction: row;
@@ -32,17 +35,19 @@ h1 {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s ease; /* <- pour translateY */
 }
 
-/* Section générique */
 .section {
   flex: 1;
   padding: 2rem;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 95vh;
+  width: 95vw;
 }
 
 #about p {
@@ -52,8 +57,8 @@ h1 {
 .button {
   background-color: transparent;
   color: #4fc3f7;
-  width: 9em;
-  height: 2.9em;
+  width: 10%;
+  height: 40px;
   border: 2px solid #4fc3f7;
   border-radius: 11px;
   text-align: right;
@@ -125,7 +130,8 @@ h1 {
   border-radius: 15px;
   padding: 1.5vh 2vw;
   margin: 1vh 0;
-  width: 60vw;
+  width: 30vw;
+  height: 30vh;
   max-width: 800px;
   background-color: #2d2d44;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -139,7 +145,17 @@ h1 {
   background-color: #3c3c5c;
 }
 
+.projets-container { 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  gap: 2vh; 
+  justify-content: center; 
+}
+
 /* Compétences */
+
 #skills-section {
   display: flex;
   flex-direction: column;
@@ -253,33 +269,7 @@ h1 {
   transition: transform 0.5s ease-in-out;
 }
 
-.etage {
-  transition: transform 0.5s ease-in-out;
-  width: 200vw; /* 2 sections par étage */
-  height: 100vh;
-}
-
-.etage .section {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 200vh; /* Deux étages (haut/bas) */
-  overflow: hidden;
-}
-
-.etage {
-  display: flex;
-  flex-direction: row;
-}
-
-@media (max-height: 1044px) {
-  html, body {
+@media only screen and (max-width: 768px) {  html, body {
     overflow: auto;
     height: auto;
   }

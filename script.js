@@ -57,10 +57,11 @@ function slideToLeft() {
 function slideRightToBottom() {
     const container = document.querySelector('.container');
     const secondEtage = document.querySelectorAll('.etage')[1];
+    container.style.overflow = 'visible';
   
     // Se préparer à afficher Compétences (à droite)
     secondEtage.style.transform = 'translateX(-100vw)';
-  
+    
     // Attendre un peu pour éviter le flash, puis descendre
     setTimeout(() => {
       container.style.transform = 'translateY(-100vh)';
@@ -71,7 +72,8 @@ function slideRightToBottom() {
 
 // Skills → Projects (vers le haut)
 function slideRightToTop() {
-    document.querySelector('.container').style.transform = 'translateY(0vh)';
+  document.querySelector('.container').style.transform = 'translateY(0vh)';
+  document.querySelector('.container').style.overflow = 'hidden';
 }
 
 // Skills → Contact (gauche)

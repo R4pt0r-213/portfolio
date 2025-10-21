@@ -9,7 +9,10 @@
 
 <body>
 <div class="container">
+  <!-- ----------------------------Etage 1 ---------------------------- -->
 <div class="etage">
+
+    <!-- ----------------------------About (haut-gauche) ---------------------------- -->
     <div class="section" id="about">
             <h1>Bienvenue au portfolio de Naji Hassain</h1>
             <p>Étudiant en ingénierie informatique et industrielle au sein d'IG2I-CentraleLille et passionné par le développement web, je suis à la recherche d'un contrat d'apprentissage où je pourrai mettre en pratique mes compétences techniques et participer activement à des projets concrets et innovants.</p>
@@ -27,6 +30,7 @@
             </button>
         </div>
 
+    <!-- ----------------------------Projects (haut-droite) ---------------------------- -->
     <div class="section" id="projects">
         <button class="button" onclick="slideToLeft()">
             <!-- Flèche vers la gauche -->
@@ -40,6 +44,7 @@
           </button>
           
             <h2>Mes Projets</h2>
+            <div class="projets-container">
             <div class="project" data-video="Videos/drone.mkv">
                 <h3>Site de Location de Drones (En Cours, html/css/js)</h3>
                 <p>Site vitrine en cours de développement, permettant aux utilisateurs de louer des drones pour divers besoins, avec une interface intuitive et des options de réservation simplifiées.</p>
@@ -64,6 +69,7 @@
               <h3>Programmation et Conception d'un Jeu de Labyrinthe sur une Matrice LED 8x8</h3>
               <p>Jeu de labyrinthe interactif où les murs se déplacent, avec pour objectif d'atteindre la sortie. Le projet a été développé en utilisant une matrice LED 8x8 pour afficher le labyrinthe, offrant ainsi une expérience ludique et visuellement dynamique.</p>
             </div>
+            </div>
             <button class="button" id="btn-to-skills" onclick="slideRightToBottom()">
                 <!-- Flèche en bas -->
                 <div class="icon">
@@ -79,7 +85,10 @@
         </div>
     
 </div>
+
+  <!-- ----------------------------Etage 2 ---------------------------- -->
 <div class="etage">
+    <!-- ----------------------------Contact (bas-gauche) ---------------------------- -->
     <div class="section" id="contact">
         <h2 id="contact-title">Me Contacter</h2>
     
@@ -126,27 +135,27 @@
           
         </button>
       </div>
+    <!-- ----------------------------Skills (bas-droite) ---------------------------- -->
     <div class="section" id="skills">
-        <button class="button" id="btn-to-top" onclick="slideRightToTop()">
+        <button style="position: fixed; top:10px; width: 10vw;" class="button" onclick="slideRightToTop()">
             <!-- Flèche vers le haut -->
-            <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                       d="M12 19.5V4.5m0 0L5.25 11.25M12 4.5l6.75 6.75" />
               </svg>
-            </div>
             <div class="text">Projets</div>
           </button>
           
         <h2 id="skills-title">Mes Compétences</h2>
     
         <div class="skill-group">
-          <h3 id="title-langages">Langages informatiques</h3>
+          <h3 id="title-langages">Informatique</h3>
           <div id="skills-row">
             <div class="box" id="skill-c">C</div>
             <div class="box" id="skill-html">HTML/CSS</div>
             <div class="box" id="skill-js">JS</div>
+            <div class="box" id="skill-react">ReactJS</div>
             <div class="box" id="skill-php">PHP</div>
             <div class="box" id="skill-java">Java</div>
             <div class="box" id="skill-sql">SQL</div>
@@ -169,9 +178,10 @@
             <div class="box" id="tool-figma">Figma</div>
             <div class="box" id="tool-phpmyadmin">phpMyAdmin</div>
             <div class="box" id="tool-arduino">Arduino</div>
+            <div class="box" id="tool-wordpress">Wordpress</div>
           </div>
         </div>
-        <button class="button" onclick="slideBotRightToLeft()">
+        <button style="position: fixed; bottom:15px; width: 10vw;" class="button" onclick="slideBotRightToLeft()">
             <!-- Flèche vers la gauche -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -185,9 +195,6 @@
         
 </div>
     
-    <footer>
-            <p>&copy; 2025 Hassain Naji. Tous droits réservés.</p>
-    </footer>
 </div>
 <div id="video-preview" style="display:none; position:absolute; pointer-events:none;">
     <video muted autoplay loop></video>
