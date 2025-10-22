@@ -170,6 +170,7 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #4fc3f7;
+  text-align: center;
 }
 
 .skill-group h3 {
@@ -223,6 +224,7 @@ h1 {
 
 #contact-title {
   font-size: 3rem;
+  text-align: center;
   margin-bottom: 40px;
   color: #4fc3f7;
   text-shadow: 1px 1px 2px #00000055;
@@ -269,7 +271,8 @@ h1 {
   transition: transform 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {  html, body {
+@media only screen and (max-width: 768px) {  
+  html, body {
     overflow: auto;
     height: auto;
   }
@@ -301,6 +304,19 @@ h1 {
 
   .button {
     display: none !important;
+  }
+  #projects {
+    height: auto;
+  }
+
+  .projets-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #projects .project {
+    width: 80vw;
+    height: auto;
   }
 }
 
