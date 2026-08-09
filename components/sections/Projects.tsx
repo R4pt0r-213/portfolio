@@ -14,18 +14,18 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
   return (
     <section
       id="projects"
-      className="relative w-screen min-h-screen overflow-hidden px-16 py-20"
+      className="relative w-screen min-h-screen overflow-hidden px-4 sm:px-8 lg:px-16 py-20"
       ref={ref}
     >
       <Direction direction="right" onClick={onPrevious} />
 
       <div className="mx-auto max-w-7xl">
 
-        <h2 className="mb-14 text-5xl font-bold">
+        <h2 className="mb-10 sm:mb-14 text-3xl sm:text-4xl lg:text-5xl font-bold">
           Mes projets
         </h2>
 
-        <div className="flex flex-col gap-30">
+        <div className="flex flex-col gap-16 sm:gap-24">
 
           {/* Académiques */}
           <div>
@@ -45,8 +45,8 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                   Informatiques
                 </h4>
 
-                <div className="border-l border-white/10 pl-5 text-neutral-400 flex gap-10 flex-wrap">
-                  <Card title="QUIZZIG">
+                <div className="border-l border-white/10 pl-3 sm:pl-5 flex flex-wrap gap-4 sm:gap-8">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="QUIZZIG">
 
                       {/* Description */}
 
@@ -76,7 +76,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Avalam">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Avalam">
 
                       {/* Description */}
 
@@ -104,7 +104,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Dentalis">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Dentalis">
 
                       {/* Description */}
 
@@ -140,8 +140,8 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                   Industriels
                 </h4>
 
-                <div className="border-l border-white/10 pl-5 text-neutral-400 flex gap-10 flex-wrap">
-                  <Card title="CarRc">
+                <div className="border-l border-white/10 pl-3 sm:pl-5 flex flex-wrap gap-4 sm:gap-8">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="CarRc">
 
                       {/* Description */}
 
@@ -169,7 +169,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="SmartWalker">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="SmartWalker">
 
                       {/* Description */}
 
@@ -221,8 +221,8 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                   Informatiques
                 </h4>
 
-                <div className="border-l border-white/10 pl-5 text-neutral-400 flex gap-10 flex-wrap">
-                  <Card title="Locadrone">
+                <div className="border-l border-white/10 pl-3 sm:pl-5 flex flex-wrap gap-4 sm:gap-8">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Locadrone">
 
                       {/* Description */}
 
@@ -250,7 +250,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Site gestion de candidatures">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Site gestion de candidatures">
 
                       {/* Description */}
 
@@ -287,9 +287,9 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                   Industriels
                 </h4>
 
-                <div className="border-l border-white/10 pl-5 text-neutral-400 flex gap-10 flex-wrap">
+                <div className="border-l border-white/10 pl-3 sm:pl-5 flex flex-wrap gap-4 sm:gap-8">
 
-                  <Card title="Réveil">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Réveil">
 
                       {/* Description */}
 
@@ -316,7 +316,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Automatisation d'éclairage">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Automatisation d'éclairage">
 
                       {/* Description */}
 
@@ -343,7 +343,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Jeux labyrinthe">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Jeux labyrinthe">
 
                       {/* Description */}
 
@@ -370,7 +370,7 @@ export default function Projects({ onPrevious, ref }: ProjectsProps) {
                       </div>
 
                   </Card>
-                  <Card title="Serrure automatique">
+                  <Card className="w-full sm:w-[calc(50%-1rem)] lg:w-[300px]" title="Serrure automatique">
 
                       {/* Description */}
 

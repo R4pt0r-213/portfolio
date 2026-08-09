@@ -24,15 +24,15 @@ export default function Hero({ onNext, goToProject, contact, ref }: HeroProps) {
       <div className="text-center">
 
 
-        <h2 className="text-4xl mt-4">
+        <h2 className="text-3xl sm:text-4xl mt-4">
           Naji Hassain
         </h2>
 
-        <p className="mt-6 text-xl">
+        <p className="mt-6 text-base sm:text-xl px-4">
           Etudiant ingénieur • Informatique • Industriel
         </p>
 
-        <p className="mt-6 text-sm">
+        <p className="mt-6 text-base sm:text-xl px-4">
             IG2I - Centrale Lille
         </p>
 

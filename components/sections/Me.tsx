@@ -34,7 +34,7 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-screen px-20 py-16 overflow-hidden"
+      className="relative min-h-screen w-screen px-4 sm:px-8 lg:px-20 py-16 overflow-hidden"
       ref={ref}
     >
       <Direction direction="left" onClick={onPrevious} />
@@ -43,14 +43,14 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
       <div className="max-w-6xl mx-auto">
 
         {/* Titre */}
-        <h2 className="text-5xl font-bold mb-8">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
           À propos de moi
         </h2>
 
         {/* Introduction */}
         <div className="mb-20">
 
-          <p className="mt-5 text-lg leading-8 text-neutral-600 max-w-3xl">
+          <p className="mt-5 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600 max-w-3xl">
             Étudiant en informatique et en industrie, je m’intéresse particulièrement à 
             la robotique et à l’intelligence artificielle. Deux domaines qui me passionnent. 
             Curieux et autonome, j’aime apprendre de nouvelles technologies en les mettant en pratique 
@@ -64,7 +64,7 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
         {/* Frise */}
         <div className="mb-24">
 
-          <h3 className="text-3xl font-semibold mb-12">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12">
             Mon parcours
           </h3>
 
@@ -75,7 +75,7 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
         {/* Stages */}
         <div>
 
-          <h3 className="text-3xl font-semibold mb-10">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12">
             Mes expériences
           </h3>
 
@@ -83,27 +83,21 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
 
             {/* Carte 1 */}
 
-            <Card>
-              <span className="text-red-300 font-semibold">
+            <Card title="Waigéo" collapsible>
+              <div className="text-red-300 font-semibold">
                         Stage · Développement web
-              </span>
-              <h4 className="text-2xl font-bold mt-3">
-                        Waigéo
-              </h4>
+              </div>
               Au sein de Waigéo, j'ai conçu et développé une application web de génération de QR codes en utilisant des technologies modernes telles que **Nuxt.js**, **Tailwind CSS** et **Resend**. J'ai participé à la conception de l'interface utilisateur, au développement des fonctionnalités principales ainsi qu'à l'intégration de services tiers pour offrir une expérience fluide et performante. Cette expérience m'a permis de renforcer mes compétences en développement web, en intégration d'API, en résolution de problèmes techniques et en gestion de projet.
             </Card>
 
             {/* Carte 2 */}
 
-            <Card>
+            <Card title="BDM Digital Media" collapsible>
 
-                    <span className="text-red-300 font-semibold">
+                    <div className="text-red-300 font-semibold">
                         Stage · Prospection
-                    </span>
+                    </div>
 
-                    <h4 className="text-2xl font-bold mt-3">
-                        BDM Digital Media
-                    </h4>
 
                     Au sein de BDM Digital Media, j'étais chargé de la prospection téléphonique afin d'identifier de nouveaux clients et de présenter les services de l'entreprise. Cette expérience m'a permis de développer mes compétences en communication, en négociation commerciale et en vente, tout en apprenant à gérer efficacement mon organisation quotidienne. J'ai également appris à atteindre des objectifs commerciaux, à assurer un suivi des prospects et à faire preuve de persévérance face aux refus.
             </Card>
