@@ -30,10 +30,7 @@ body {
   height: 100dvh;
   overflow-x: hidden;
   overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .portfolio-canvas {
@@ -49,14 +46,13 @@ body {
 
 .portfolio-slide {
   width: 100vw;
-  height: 100dvh;
+  min-height: 100dvh;
+  height: auto;
   flex: none;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: visible;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  scrollbar-width: thin;
-  scrollbar-color: rgb(127 29 29 / 45%) transparent;
 }
 
 @media (min-width: 48rem) {
