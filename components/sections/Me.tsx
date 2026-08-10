@@ -50,7 +50,7 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
         {/* Introduction */}
         <div className="mb-20">
 
-          <p className="mt-5 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600 max-w-3xl">
+          <p className="mt-5 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-300 max-w-3xl">
             Étudiant en informatique et en industrie, je m’intéresse particulièrement à 
             la robotique et à l’intelligence artificielle. Deux domaines qui me passionnent. 
             Curieux et autonome, j’aime apprendre de nouvelles technologies en les mettant en pratique 
@@ -87,7 +87,7 @@ export default function About({ onNext, onPrevious, ref }: AboutProps) {
               <div className="text-red-300 font-semibold">
                         Stage · Développement web
               </div>
-              Au sein de Waigéo, j'ai conçu et développé une application web de génération de QR codes en utilisant des technologies modernes telles que **Nuxt.js**, **Tailwind CSS** et **Resend**. J'ai participé à la conception de l'interface utilisateur, au développement des fonctionnalités principales ainsi qu'à l'intégration de services tiers pour offrir une expérience fluide et performante. Cette expérience m'a permis de renforcer mes compétences en développement web, en intégration d'API, en résolution de problèmes techniques et en gestion de projet.
+              Au sein de Waigéo, j'ai conçu et développé une application web de génération de QR codes en utilisant des technologies modernes telles que Nuxt.js, Tailwind CSS et Resend. J'ai participé à la conception de l'interface utilisateur, au développement des fonctionnalités principales ainsi qu'à l'intégration de services tiers pour offrir une expérience fluide et performante. Cette expérience m'a permis de renforcer mes compétences en développement web, en intégration d'API, en résolution de problèmes techniques et en gestion de projet.
             </Card>
 
             {/* Carte 2 */}
