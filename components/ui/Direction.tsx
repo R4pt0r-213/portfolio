@@ -65,7 +65,7 @@ export default function Direction({
 
         shapes[direction],
 
-        "border-red-300/20 bg-red-950/45 text-red-50 backdrop-blur-xl",
+        "border-red-300/20 bg-red-600/45 text-red-50 backdrop-blur-xl",
 
         "shadow-[0_12px_40px_rgba(127,29,29,0.22)]",
 
